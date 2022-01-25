@@ -11,13 +11,14 @@ public class Charizard extends Pokemon {
         this.salud = salud;
     }
 
+   
     @Override
-    public void Evolucionar() {
+    public String Gritar() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public String Gritar() {
+    public Pokemon Evolucionar() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

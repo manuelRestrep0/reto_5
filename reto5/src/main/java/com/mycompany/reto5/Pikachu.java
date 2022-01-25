@@ -6,13 +6,14 @@ public class Pikachu extends Raichu{
         super(nombre, nivel, salud);
     }
 
-     @Override
-    public void Evolucionar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    @Override
+    public Pokemon Evolucionar() {
+        return new Raichu(this.nombre,this.nivel,this.salud + 200);
     }
 
+    
     @Override
     public String Gritar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "Raichu";
     }
 }
