@@ -11,10 +11,14 @@ public class Charizard extends Pokemon {
         this.salud = salud;
     }
 
+    public int getSalud() {
+        return salud;
+    }
+
    
     @Override
     public String Gritar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "Charizard ya se encuentra al maximo";
     }
 
     @Override
