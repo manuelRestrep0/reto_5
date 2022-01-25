@@ -18,12 +18,12 @@ public class Charizard extends Pokemon {
    
     @Override
     public String Gritar() {
-        return "Charizard ya se encuentra al maximo";
+        return "Charizard";
     }
 
     @Override
-    public Pokemon Evolucionar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Pokemon Evolucionar() throws NoEvolucionaException {
+    throw new NoEvolucionaException();    
     }
     
 }

@@ -13,6 +13,6 @@ public class Wartortle extends Blastoise {
 
     @Override
     public String Gritar() {
-        return "Blastoise";
+        return "Wartortle";
     }
 }

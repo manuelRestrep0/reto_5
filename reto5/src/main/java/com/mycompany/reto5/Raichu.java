@@ -15,11 +15,11 @@ public class Raichu extends Pokemon {
 
     @Override
     public String Gritar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return "Raichu";
     }
 
     @Override
-    public Pokemon Evolucionar() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Pokemon Evolucionar() throws NoEvolucionaException{
+        throw new NoEvolucionaException();
     }
 }

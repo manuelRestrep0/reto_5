@@ -14,6 +14,6 @@ public class Pikachu extends Raichu{
     
     @Override
     public String Gritar() {
-        return "Raichu";
+        return "Pikachu";
     }
 }

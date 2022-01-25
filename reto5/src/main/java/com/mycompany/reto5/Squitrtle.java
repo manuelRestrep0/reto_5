@@ -14,6 +14,6 @@ public class Squitrtle extends Wartortle {
  
     @Override
     public String Gritar() {
-        return "Wartortle";
+        return "Squirtle";
     }
 }

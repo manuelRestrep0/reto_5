@@ -14,6 +14,6 @@ public class Charmeleon extends Charizard {
     
     @Override
     public String Gritar() {
-        return "Charizard";
+        return "Charmeleon";
     }
 }
