@@ -47,6 +47,7 @@ public class main {
                     {
                         System.out.println(pokemonActual.Gritar());
                     }
+                    break;
                 }
                 case 2:
                 {
@@ -58,6 +59,7 @@ public class main {
                             System.out.println(e.getMessage());
                         }
                     }
+                    break;
                 }
                 case 3:
                 {
@@ -70,7 +72,7 @@ public class main {
                              for(Pokebola pokebolaActual : pokebolasInventario)
                              {
                                  System.out.println(pokebolaActual.pokemonAtrapado.Gritar());
-                             }
+                             } break;
                          }
                          case 2:
                          {
@@ -94,55 +96,19 @@ public class main {
                                  }
                                  case 3:
                                  {
-                                     System.out.println("1)Ver pokebolas.\n2)Atrapar un pokemon.");
-                                     input = new Scanner(System.in);
-                                     switch(input.nextInt()){
-                                         case 1:
-                                         {
-                                             if(pokebolasInventario.size() != 0 )
-                                             {
-                                                 for(Pokebola pokebolaActual : pokebolasInventario)
-                                                {
-                                                    System.out.println(pokebolaActual.getPokemonAtrapado().Gritar());
-                                                }
-                                             }
-                                             break;
-                                         }
-                                         case 2:
-                                         {
-                                             System.out.println("1)Charmander.\n2)Pikachu.\n3)Squirtle.");
-                                             input = new Scanner(System.in);
-                                             switch(input.nextInt())
-                                             {
-                                                 case 1:
-                                                 {
-                                                     System.out.println("introduzca el nombre del pokemon: ");
-                                                     input = new Scanner(System.in);
-                                                     pokebolasInventario.add(new Charizard(input.nextLine(),(byte)1,100));
-                                                 }
-                                                 case 2:
-                                                 {
-                                                     System.out.println("introduzca el nombre del pokemon: ");
-                                                     input = new Scanner(System.in);
-                                                     pokebolasInventario.add(new Pikachu(input.nextLine(),(byte)1,100));
-                                                 }
-                                                 case 3:
-                                                 {
-                                                     System.out.println("introduzca el nombre del pokemon: ");
-                                                     input = new Scanner(System.in);
-                                                     pokebolasInventario.add(new Squitrtle(input.nextLine(),(byte)1,100));
-                                                 }
-                                             }
-                                         }
-                                     }
-                                 }
-                                     
+                                     pokebolasInventario.add(new Squitrtle(input.toString(),(byte)1,100));
+                                     break;
+                                 }   
                              }
+                             break;
                          }
                      }
                 }
                 default:
-                    break;
+                {
+                    ejecucion = false;
+                }
+                    
             }
         } 
         }
